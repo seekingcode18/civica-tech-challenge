@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #C1BEB7;
+  color: #4B497A;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  // background-color: #4B497A;
+  background-color: #5E7691;
+  color: #E6E3D3;
+}
+
+form {
+  margin-bottom: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  padding: 1rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: none;
+}
+
+input[type="text"]:focus, input[type="text"]:focus-visible {
+  outline: 2px solid #4B497A;
+}
+
+.personnel-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.personnel-card {
+  background: #353355;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.personnel-card:hover, .personnel-card:active {
+  border-bottom: 3px solid #E6E3D3;
+}
+
+.personnel-card > h3 {
+  font-size: 1.3rem;
+}
+
+.personnel-card > p {
+  margin-top: 1rem;
+}
+
+.personnel-label {
+  color: #C1BEB7;
+}
+
+@media (min-width: 800px) {
+  .personnel-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
